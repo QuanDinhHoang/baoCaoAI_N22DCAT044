@@ -89,4 +89,38 @@ A CNN typically consists of four key components:
 ```bash
 git clone https://github.com/QuanDinhHoang/baoCaoAI_N22DCAT044.git
 
+Set Up the Environment
+Download and install Anaconda from the official website:
+👉 https://www.anaconda.com/download/success
+
+Create a new virtual environment (recommended: Python 3.10):
+
+conda create -n lfw_env python=3.10
+conda activate lfw_env
+📦 Install Required Libraries
+Install all required Python libraries using pip:
+
+pip install -r requirements.txt
+If requirements.txt is not available, manually install the libraries listed in the documentation.
+
+📁 Set the Dataset Path
+In the train.py file, update the DATASET_PATH to match your local dataset directory:
+
+
+DATASET_PATH = r"D:\baoCaoAI_N22DCAT044\archive\lfw-deepfunneled\lfw-deepfunneled"
+⚠️ Ensure the dataset is extracted to this path or update it based on your dataset's actual location.
+
+▶️ Run the Training Script
+Once everything is set up, activate your environment and execute the training file:
+python D:\baoCaoAI_N22DCAT044\train.py
+
+
+
+
+
+
+
+
+
+
 
