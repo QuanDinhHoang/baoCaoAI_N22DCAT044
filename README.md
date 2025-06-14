@@ -2,7 +2,7 @@
 
 My Project : Face classification using Convolutional Neural Networks (CNN) on the LFW dataset
 
-#1. LFW Dataset (Labeled Faces in the Wild)
+##1. LFW Dataset (Labeled Faces in the Wild)
 -The Labeled Faces in the Wild (LFW) dataset is a facial image database developed to explore the problem of unconstrained face recognition.
 -LFW was released for research purposes in order to advance the field of face verification, and not intended to be a comprehensive benchmark for evaluating commercial algorithms prior to deployment.
 -The goal of LFW is to evaluate the accuracy of face recognition systems under uncontrolled conditions (in-the-wild) — that is, images captured in real-world environments with various challenges such as different poses, lighting conditions, facial expressions, and resolutions.
@@ -16,7 +16,7 @@ My Project : Face classification using Convolutional Neural Networks (CNN) on th
 +Image size: Original resolution is 250×250 pixels; the LFW-DeepFunneled version has been aligned and normalized for neural network training.
 
 
-#2. Convolutional Neural Network (CNN)
+##2. Convolutional Neural Network (CNN)
 -A Convolutional Neural Network (CNN), also known as ConvNet, is a specialized type of deep learning algorithm primarily designed for object recognition tasks such as image classification, among others. CNNs are applied in many real-world scenarios, including self-driving cars, security camera systems, and various other domains.
 -There are several reasons why CNNs have become crucial in the modern world, including:
 • CNNs outperform traditional machine learning algorithms such as Support Vector Machines (SVMs) and decision trees by automatically extracting large-scale features, eliminating the need for manual feature engineering, thereby improving processing efficiency.
@@ -31,7 +31,7 @@ My Project : Face classification using Convolutional Neural Networks (CNN) on th
 3.Pooling Layers (commonly Max-Pooling)
 4.Fully Connected Layers
 
-#3.About my project :
+##3.About my project :
 -I use LFW dataset:
 +First, the program iterates through all the subdirectories corresponding to each individual in the LFW dataset and counts the number of images per person.
 +Only individuals with 30 or more images are selected for training to ensure a sufficiently large dataset and to avoid training bias.
