@@ -46,18 +46,39 @@ A CNN typically consists of four key components:
 4. **Fully Connected Layers** – for final classification based on extracted features.
 
 
-##3.About my project :
--I use LFW dataset:
-+First, the program iterates through all the subdirectories corresponding to each individual in the LFW dataset and counts the number of images per person.
-+Only individuals with 30 or more images are selected for training to ensure a sufficiently large dataset and to avoid training bias.
-+From the selected images, the face_recognition library is used to detect and extract face regions, which are then resized to a standard size of 100x100 pixels.
-+The corresponding labels are stored and then encoded into numerical format using LabelEncoder.
-+The dataset is split into training (80%), validation (10%), and test (10%) sets using stratified sampling, ensuring that the class distribution remains balanced across all subsets.
+# 3. About My Project
 
--Model and Training :
-+The CNN model is built with 4 blocks consisting of Conv2D + BatchNormalization + MaxPooling, followed by 2 Dense layers with Dropout (0.6) to prevent overfitting.
-+The loss function used is categorical_crossentropy, and the optimizer is Adam.
-+The model is trained for 60 epochs with a batch size of 64, while monitoring performance on the validation set.
+## 📁 Dataset Preparation – LFW (Labeled Faces in the Wild)
+
+- ✅ **Step 1**: The program iterates through all subdirectories in the LFW dataset, counting the number of images per individual.
+- ✅ **Step 2**: Only individuals with **≥ 30 images** are selected to ensure a sufficiently large dataset and to avoid training bias.
+- ✅ **Step 3**: Using the `face_recognition` library, the program detects and extracts face regions from the selected images.
+- ✅ **Step 4**: Each face image is resized to a standard size of **100×100 pixels**.
+- ✅ **Step 5**: Corresponding labels are encoded into numeric format using `LabelEncoder`.
+- ✅ **Step 6**: The dataset is split into:
+  - **Training set**: 80%  
+  - **Validation set**: 10%  
+  - **Test set**: 10%  
+  using **stratified sampling** to preserve class distribution across all subsets.
+
+---
+
+## 🧠 Model Architecture & Training
+
+- 🧩 **Model Structure**:
+  - Built using **4 blocks** of:
+    - `Conv2D`
+    - `BatchNormalization`
+    - `MaxPooling2D`
+  - Followed by **2 Dense layers** with a `Dropout` of **0.6** to prevent overfitting.
+
+- ⚙️ **Training Configuration**:
+  - **Loss function**: `categorical_crossentropy`
+  - **Optimizer**: `Adam`
+  - **Epochs**: 60
+  - **Batch size**: 64
+  - **Validation**: Model performance is monitored on the validation set during training.
+
 
 ## 🚀4. Cài đặt & chạy thử
 -Clone the project into the D drive because I have set up the program to only load the LFW dataset from a directory with an absolute path :
