@@ -44,7 +44,7 @@ My Project : Face classification using Convolutional Neural Networks (CNN) on th
 +The loss function used is categorical_crossentropy, and the optimizer is Adam.
 +The model is trained for 60 epochs with a batch size of 64, while monitoring performance on the validation set.
 
-4.Setup to run:
+## 🚀 Cài đặt & chạy thử
 -Clone the project into the D drive because I have set up the program to only load the LFW dataset from a directory with an absolute path :
 git clone https://github.com/QuanDinhHoang/baoCaoAI_N22DCAT044.git
 -Download the appropriate version of Anaconda for your operating system using the link: https://www.anaconda.com/download/success
