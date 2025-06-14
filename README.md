@@ -2,18 +2,22 @@
 
 My Project : Face classification using Convolutional Neural Networks (CNN) on the LFW dataset
 
-##1. LFW Dataset (Labeled Faces in the Wild)
--The Labeled Faces in the Wild (LFW) dataset is a facial image database developed to explore the problem of unconstrained face recognition.
--LFW was released for research purposes in order to advance the field of face verification, and not intended to be a comprehensive benchmark for evaluating commercial algorithms prior to deployment.
--The goal of LFW is to evaluate the accuracy of face recognition systems under uncontrolled conditions (in-the-wild) — that is, images captured in real-world environments with various challenges such as different poses, lighting conditions, facial expressions, and resolutions.
+# 1. LFW Dataset (Labeled Faces in the Wild)
 
-*Key characteristics of the LFW dataset:
-+Number of images: 13,233 facial images.
-+Number of individuals: 5,749 different people.
-+Images per individual: Uneven distribution; only around 1,680 individuals have more than one image.
-+Image sources: Images are collected from the Internet (mainly from news websites).
-+Labeling: Each image is labeled with the name of the person appearing in it.
-+Image size: Original resolution is 250×250 pixels; the LFW-DeepFunneled version has been aligned and normalized for neural network training.
+The Labeled Faces in the Wild (LFW) dataset is a facial image database developed to explore the problem of unconstrained face recognition.
+
+- **Purpose:** Released for research to advance face verification, not for commercial algorithm evaluation.
+- **Goal:** Evaluate the accuracy of face recognition systems under uncontrolled real-world conditions (in-the-wild).
+
+## 🔑 Key characteristics of the LFW dataset:
+
+- 📸 **Number of images:** 13,233 facial images  
+- 👥 **Number of individuals:** 5,749 different people  
+- 🔁 **Images per individual:** Uneven; ~1,680 people have >1 image  
+- 🌐 **Image sources:** Collected from the Internet (mainly news websites)  
+- 🏷️ **Labeling:** Each image is labeled with the person’s name  
+- 🖼️ **Image size:** 250×250 pixels (DeepFunneled version aligned & normalized)
+
 
 
 ##2. Convolutional Neural Network (CNN)
